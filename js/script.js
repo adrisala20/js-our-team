@@ -87,8 +87,16 @@ buttonSubmit.addEventListener('click', (e) => {
     const imagesVal = document.getElementById('images').value;
 
     //creo una variabile dove aggiungere i valori
+    let newMember = {
+        'name': nameVal,
+        'surname': surnameVal,
+        'role': roleVal,
+        'img': imagesVal,
+    };
 
-    console.log(nameVal);
+    team.push(newMember);
+
+    console.log(newMember);
 
 })
 
