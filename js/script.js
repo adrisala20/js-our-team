@@ -1,11 +1,4 @@
 /* 
-Utilizzando i dati forniti, creare un array di oggetti per rappresentare i membri del team.
-Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
-MILESTONE 0:
-Creare l’array di oggetti con le informazioni fornite.
-MILESTONE 1:
-Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
-MILESTONE 2:
 Stampare le stesse informazioni su DOM sottoforma di stringhe
 BONUS 1:
 Trasformare la stringa foto in una immagine effettiva
@@ -20,6 +13,7 @@ Prima la logica in italiano e poi traduciamo in codice.
 
 //creo l'array
 //inserisco gli oggeti
+//<div class="col"></div>
 
 let team = [
     {
@@ -60,3 +54,12 @@ let team = [
     }
 ] 
 console.log(team)
+
+const rowEl = document.createElement('div');
+rowEl.classList.add('col');
+console.log(rowEl)
+
+
+rowEl.innerHTML = `
+
+`;
