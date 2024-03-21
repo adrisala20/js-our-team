@@ -69,3 +69,10 @@ for(let i = 0 ; i < team.length ;i++){
 }
 
 const button=document.querySelector('.btn.btn-success');
+button.addEventListener('click', addNewMember);
+
+//funzione principale
+function addNewMember(){
+    const formEl = document.getElementById('form');
+    formEl.classList.remove('d-none')
+}
