@@ -27,9 +27,35 @@
             <h1 class="text-capitalize text-center  ">our team</h1>
             <!-- <input type="text" value="" id="" class=" form-control mt-3  "> -->
             <div class="row">
-                
             </div>
-            <button class="btn  btn-success mt-3 col-1"> Invia</button>
+            <!-- ---- bottone ---- -->
+            <button class="btn  btn-success mt-3 col-3"> Aggiungi nuovo membro</button>
+            <!-- ----- form --- -->
+            <div>
+                <form class="my-4 ">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="surname" class="form-label">Cognome</label>
+                        <input type="text" class="form-control" id="surname">
+                    </div>
+                    <div class="mb-3">
+                        <label for="role" class="form-label">Ruolo</label>
+                        <input type="text" class="form-control" id="role">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label">inserisci un'immagine</label>
+                        <input class="form-control" type="file" id="images">
+                      </div>
+                    
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+
+
             <div id="risultato"></div>
         </div>
     </main>

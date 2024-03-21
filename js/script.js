@@ -1,9 +1,4 @@
 /* 
-Stampare le stesse informazioni su DOM sottoforma di stringhe
-BONUS 1:
-Trasformare la stringa foto in una immagine effettiva
-BONUS 2:
-Organizzare i singoli membri in card/schede
 BONUS 3:
 Permettere l'aggiunta di un nuovo membro del team
 Consigli del giorno:
@@ -73,3 +68,4 @@ for(let i = 0 ; i < team.length ;i++){
     //console.log(rowEl)
 }
 
+const button=document.querySelector('.btn.btn-success');
