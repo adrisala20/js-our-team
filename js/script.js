@@ -48,7 +48,7 @@ let team = [
         'img': 'barbara-ramos-graphic-designer.jpg'
     }
 ] 
-//console.log(team)
+console.log(team)
 
 for(let i = 0 ; i < team.length ;i++){
     const row = document.querySelector('.row');
@@ -56,13 +56,14 @@ for(let i = 0 ; i < team.length ;i++){
     rowEl.classList.add('col');
 
     rowEl.innerHTML = `
+
     <img src='img/${team[i].img}'> <br>
     ${team[i].name}
     ${team[i].surname}<br> 
     ${team [i].role} <br>
     `;
 
-    row.appendChild(rowEl)
+    row.appendChild(rowEl);
     //console.log(rowEl)
 }
 
@@ -81,6 +82,7 @@ const buttonSubmit = document.querySelector('.btn.btn-primary');
 
 buttonSubmit.addEventListener('click', (e) => {
     e.preventDefault();
+
     const nameVal =document.getElementById('name').value;
     const surnameVal =document.getElementById('surname').value;
     const roleVal = document.getElementById('role').value;
@@ -95,8 +97,19 @@ buttonSubmit.addEventListener('click', (e) => {
     };
 
     team.push(newMember);
+    //console.log(newMember);
 
-    console.log(newMember);
+    const row = document.querySelector('.row');
+    const rowEl = document.createElement('div');
+    rowEl.classList.add('col');
 
-})
+    rowEl.innerHTML = `
+    <img src='img/${newMember.img}'> <br>
+    ${newMember.name}
+    ${newMember.surname}<br> 
+    ${newMember.role} <br>
+    `;
+    row.appendChild(rowEl);
+
+});
 
