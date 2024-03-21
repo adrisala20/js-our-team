@@ -111,5 +111,9 @@ buttonSubmit.addEventListener('click', (e) => {
     `;
     row.appendChild(rowEl);
 
+    function reset(){
+        document.getElementById('form').reset();
+    }
+
 });
 
