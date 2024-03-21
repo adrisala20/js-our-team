@@ -48,9 +48,7 @@ let team = [
         'img': 'barbara-ramos-graphic-designer.jpg'
     }
 ] 
-console.log(team)
-
-
+//console.log(team)
 
 for(let i = 0 ; i < team.length ;i++){
     const row = document.querySelector('.row');
@@ -71,8 +69,26 @@ for(let i = 0 ; i < team.length ;i++){
 const button=document.querySelector('.btn.btn-success');
 button.addEventListener('click', addNewMember);
 
-//funzione principale
+
+
+//funzioni
 function addNewMember(){
     const formEl = document.getElementById('form');
-    formEl.classList.remove('d-none')
-}
+    formEl.classList.remove('d-none');
+};
+
+const buttonSubmit = document.querySelector('.btn.btn-primary');
+
+buttonSubmit.addEventListener('click', (e) => {
+    e.preventDefault();
+    const nameVal =document.getElementById('name').value;
+    const surnameVal =document.getElementById('surname').value;
+    const roleVal = document.getElementById('role').value;
+    const imagesVal = document.getElementById('images').value;
+
+    //creo una variabile dove aggiungere i valori
+
+    console.log(nameVal);
+
+})
+
